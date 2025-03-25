@@ -13,7 +13,8 @@ var mcpClient = await McpClientFactory.CreateAsync(
         TransportType = TransportTypes.StdIo,
         TransportOptions = new()
         {
-            ["command"] = "npx", ["arguments"] = "-y @modelcontextprotocol/server-everything",
+            //["command"] = "npx", ["arguments"] = "-y @modelcontextprotocol/server-everything",
+            ["command"] = "dotnet", ["arguments"] = "run --project C:\\Item\\Github\\qumeta\\csharp-sdk\\samples\\TestServerWithHosting",
         }
     });
 
